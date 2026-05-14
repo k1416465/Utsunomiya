@@ -23,10 +23,7 @@ def train_status():
     else:
         status = "運行情報確認中"
 
-    return Response(
-    json.dumps(data, ensure_ascii=False),
-    mimetype="application/json"
-)
+    return jsonify(data)
         "line":"宇都宮線",
         "status":status
     })
